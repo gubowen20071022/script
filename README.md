@@ -10,27 +10,27 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **乐鑫 (Espressif)** | **ESP32-P4** | 双核 RISC-V @ 400MHz | AI指令扩展 (FPU) | 768KB SRAM + PSRAM | H.264, MIPI-CSI/DSI | 高性能MCU, 安全 |
 | | **ESP32-S3** | 双核 Xtensa LX7 @ 240MHz | 向量指令 | 512KB SRAM + Octal SPI | LCD, 摄像头接口 | 集成 Wi-Fi/BT |
-| **地瓜机器人 (Horizon)** | **RDK S100** | S100 SoC | **80 - 128 TOPS** | 外置 | 高性能 | 具身智能 |
-| | **RDK X5** | 旭日 5 (Sunrise 5) | 10 TOPS | 外置 | - | 机器人 VSLAM, 深度 |
-| | **RDK X3** | 旭日 3 (Sunrise 3) | 5 TOPS | 外置 | 4K@60 H.264/265 | 高性价比机器人套件 |
-| **广和通 (Fibocom)** | **SC171** | 8核 ARM v8 Cortex @ 2.7GHz | 13 TOPS (综合) | 外置 | MIPI, HDMI | 5G, Android/Ubuntu |
-| | **L610** | LTE Cat 1 模组 | - | - | - | 低速物联网 |
-| **意法半导体 (STMicro)** | **STM32N6** | Cortex-M 系列 | **集成 NPU** | - | 摄像头/显示 | 首款带NPU的STM32 |
-| | **Stellar** | ARM Cortex-R52 | - | - | - | 车规级网关 |
-| | **STM32H7** | Cortex-M7 (+M4) | - | 内部 SRAM/Flash | - | 高性能 MCU |
-| **沁恒 (WCH)** | **CH32H417** | 双核 RISC-V (青稞) | - | - | - | USB 3.0, 千兆以太网 |
-| | **CH585** | RISC-V | - | - | - | BLE 5.4, NFC, USB |
-| **海思 (HiSilicon)** | **SS928** | 四核 Cortex-A55 @ 1.4GHz | 10 TOPS INT8 | 外置 | 8K 编解码 | 智能摄像机/IPC |
-| | **WS63** | 32位 RISC-V | - | - | - | 星闪 (SLE), Wi-Fi 6 |
-| **瑞芯微 (Rockchip)** | **RK3588** | 4xA76 + 4xA55 (8nm) | 6 TOPS | 外置 | **8K 视频** | 旗舰性能 |
-| | **RV1126B** | 四核 Cortex-A53 @ 1.6GHz | 3 TOPS | 外置 | MIPI CSI/DSI | 视觉 AI |
-| **瑞萨 (Renesas)** | **RZ/V2H** | A55 + R8 + M33 | 8 TOPS (DRP-AI3) | 外置 | - | 异构, 低功耗 |
+| **地瓜机器人 (Horizon)** | **RDK S100** | S100 SoC | **80 - 128 TOPS** | 12GB LPDDR5 / 64GB eMMC | 高性能 | 具身智能 |
+| | **RDK X5** | 旭日 5 (Sunrise 5) | 10 TOPS | 4GB/8GB LPDDR4 | - | 机器人 VSLAM, 深度 |
+| | **RDK X3** | 旭日 3 (Sunrise 3) | 5 TOPS | 2GB/4GB LPDDR4 | 4K@60 H.264/265 | 高性价比机器人套件 |
+| **广和通 (Fibocom)** | **SC171** | 8核 ARM v8 Cortex @ 2.7GHz | 13 TOPS (综合) | 4GB+64GB / 8GB+128GB | MIPI, HDMI | 5G, Android/Ubuntu |
+| | **L610** | LTE Cat 1 模组 | - | 8MB PSRAM + 4MB Flash | - | 低速物联网 |
+| **意法半导体 (STMicro)** | **STM32N6** | Cortex-M 系列 | **集成 NPU** | 4.2MB SRAM (无内置Flash) | 摄像头/显示 | 首款带NPU的STM32 |
+| | **Stellar** | ARM Cortex-R52 | - | ~2MB Flash / ~1MB RAM | - | 车规级网关 |
+| | **STM32H7** | Cortex-M7 (+M4) | - | 1MB RAM / 2MB Flash | - | 高性能 MCU |
+| **沁恒 (WCH)** | **CH32H417** | 双核 RISC-V (青稞) | - | 896KB SRAM / 960KB Flash | - | USB 3.0, 千兆以太网 |
+| | **CH585** | RISC-V | - | 128KB SRAM / 512KB Flash | - | BLE 5.4, NFC, USB |
+| **海思 (HiSilicon)** | **SS928** | 四核 Cortex-A55 @ 1.4GHz | 10 TOPS INT8 | 支持 DDR4 / 8GB eMMC | 8K 编解码 | 智能摄像机/IPC |
+| | **WS63** | 32位 RISC-V | - | 606KB SRAM / 4MB Flash | - | 星闪 (SLE), Wi-Fi 6 |
+| **瑞芯微 (Rockchip)** | **RK3588** | 4xA76 + 4xA55 (8nm) | 6 TOPS | 4-32GB LPDDR4/5 + eMMC | **8K 视频** | 旗舰性能 |
+| | **RV1126B** | 四核 Cortex-A53 @ 1.6GHz | 3 TOPS | 1/2/4GB RAM + 8GB+ eMMC | MIPI CSI/DSI | 视觉 AI |
+| **瑞萨 (Renesas)** | **RZ/V2H** | A55 + R8 + M33 | 8 TOPS (DRP-AI3) | 6MB SRAM + Ext DDR | - | 异构, 低功耗 |
 | | **RA8D1** | Cortex-M85 @ 480MHz | Helium 向量扩展 | 1MB SRAM | LCD | 最高性能 Cortex-M |
-| **睿赛德 (RT-Thread)** | **K230 套件** | 双核 RISC-V (C908) | KPU (AI) | - | - | 实时AI, 混合OS |
-| **移远 (Quectel)** | **QSM368ZP** | Rockchip RK3568 (四核 A55) | 1 TOPS | 外置 | 4K 解码 | 智能模组 |
+| **睿赛德 (RT-Thread)** | **K230 套件** | 双核 RISC-V (C908) | KPU (AI) | 512MB LPDDR4 | - | 实时AI, 混合OS |
+| **移远 (Quectel)** | **QSM368ZP** | Rockchip RK3568 (四核 A55) | 1 TOPS | 2/4GB LPDDR4 + 32GB eMMC | 4K 解码 | 智能模组 |
 | **英飞凌 (Infineon)** | **PSoC Edge** | Cortex-M55 + M33 | Ethos-U55 (0.1T) | SRAM + RAM | - | Helium DSP, 低功耗AI |
-| | **XMC7000** | Cortex-M7 | - | - | - | 工业控制 |
-| **龙芯 (Loongson)** | **LS2K3000** | **8核** LA364E | GPGPU (AI) | 外置 | - | 自主架构 |
+| | **XMC7000** | Cortex-M7 | - | 1MB RAM / 8MB Flash | - | 工业控制 |
+| **龙芯 (Loongson)** | **LS2K3000** | **8核** LA364E | GPGPU (AI) | 8GB LPDDR4 (片内集成) | - | 自主架构 |
 | | **LS2K0300** | 单核 LA264 @ 1GHz | - | 16位 DDR4 | - | 低功耗 (<3W) |
 
 ## 2. 厂商详细规格
