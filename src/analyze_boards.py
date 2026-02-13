@@ -2,7 +2,8 @@ import os
 import re
 from pypdf import PdfReader
 
-PDF_DIR = r"C:\Users\Lenovo\Desktop\script\pdf_for_embedd"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PDF_DIR = os.path.join(PROJECT_ROOT, "data", "pdfs")
 
 def clean_text(text):
     if not text:

@@ -2,7 +2,8 @@
 import os
 from pypdf import PdfReader
 
-PDF_DIR = r"C:\Users\Lenovo\Desktop\script\pdf_for_embedd"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PDF_DIR = os.path.join(PROJECT_ROOT, "data", "pdfs")
 OUTPUT_DIR = os.path.join(PDF_DIR, "extracted_text")
 
 def extract_text(pdf_path, output_path):
