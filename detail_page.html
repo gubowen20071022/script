@@ -1,0 +1,981 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>【选题指南】2026应用赛道-移远赛题_嵌入式芯片与系统设计竞赛首页-嵌入式芯片与系统设计竞赛官网-嵌入式暨智能互联大赛官网</title>
+<base href="http://www.socchina.net:80/">
+	<link rel="shortcut icon" href="images/bitbug_favicon.png" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="嵌入式大赛,嵌入式暨智能互联大赛,智能互联创新大赛,嵌入式芯片与系统设计竞赛">
+    <meta name="description" content="嵌入式暨智能互联大赛目前成功举办到第三届，有301所高校的1618支队伍成功参与，作品领域紧靠物联网、人工智能、大数据等前沿科技领域">
+
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="css/m2016.css">
+    <link rel="stylesheet" type="text/css" href="css/hy_center.css">
+	<link rel="stylesheet" type="text/css" href="./css/index_two.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="public/extend.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" href="layui2/css/layui.css">	
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+
+
+<script type="text/javascript">
+ 	var SYS_URL = '/admin';
+</script>
+
+<script type="text/javascript" src="js/ie.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="layui2/layui.js"></script>
+<script type="text/javascript" src="js/SysCommon.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="./js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="./js/home.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	try {
+	    var urlhash = window.location.hash;
+	        if (!urlhash.match("fromapp")) {
+	            if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
+	                 var url = window.location.href;
+	                 var uri = 'http://www.socchina.net:80/';
+	                 var api = url.substring(uri.length-3,url.length);
+	                
+	                 
+	                 // 本地版本
+	                 var spl = url.split(uri);
+	                 if(spl.length > 1){
+	                	 api = spl[1];
+	                 }
+	                 if (api.indexOf('wx') != 0){
+	                     window.location = 'http://www.socchina.net:80/' + 'wx/' +  api;
+	                 } else {
+	                     window.location = "http://www.socchina.net:80/wx/index";
+	                 }
+	            }
+	        }
+	    } 
+	    catch (err) {
+	}
+    
+	
+	var url = window.location.href;
+ 	if(navigator.appName == "Microsoft Internet Explorer"&&parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE",""))<9){
+        //alert("您的浏览器版本过低，请使用IE9及以上版本");
+        if(url.indexOf('nonsupport') == -1){
+        	window.location.href = 'http://www.socchina.net:80/nonsupport';
+        }
+    }else{
+    	if(url.indexOf('nonsupport') != -1){
+    		window.location.href = 'http://www.socchina.net:80/';
+    	}
+    }
+ 	
+ 	// 监听图片错误，如果路径错误，就补全路径
+ 	document.addEventListener("error", function(e){
+ 		var elem = e.target;
+ 		if(elem.tagName.toLowerCase() === 'img'){
+ 			var notFoundImgSrc = $(elem).attr("src")
+			if(notFoundImgSrc.indexOf("http://socoss.socchina.net/") < 0){
+				var src = notFoundImgSrc.substring(notFoundImgSrc.indexOf("file/"));
+				elem.src = "http://socoss.socchina.net/" + src;
+			}
+ 			
+ 		}
+ 	}, true)
+ 	
+</script>
+</head>
+<body class="gray-bg">
+	
+<style>
+/* 富文本内 img 样式控制 */
+.api-editor-pic {
+    max-width: 100%;
+}
+td, th {
+    padding: 5px 10px;
+    border: 1px solid white;
+}
+</style>
+	<div class="content-box">
+		
+
+
+<SCRIPT language=javascript>
+    function out() {
+    	var menu = document.getElementById("menu");
+        if (window.event.toElement.id != "menu" && window.event.toElement.id != "link")
+            menu.style.visibility = "hidden";
+    }
+    function outTwo(event) {
+        var menuTwo = document.getElementById("menuTwo");
+            menuTwo.style.display = "none";
+        
+    }
+    function selectReg(){
+    	var menuTwo = document.getElementById("menuTwo");
+    	menuTwo.style.display = "block";
+    }
+    
+    function toWx1(){
+		 window.location.href= "questionnaireBank/queryList";
+		 var menuTwo = document.getElementById("menuTwo");
+        menuTwo.style.display = "none";
+	 }
+    
+    
+    function toWx2(){
+		 window.location.href= "user/getWxLoginTwo?value=5";
+		 var menuTwo = document.getElementById("menuTwo");
+         menuTwo.style.display = "none";
+	 }
+    
+    function toWx3(){
+		 window.location.href= "user/getWxLoginTwo?value=2";
+		 var menuTwo = document.getElementById("menuTwo");
+        menuTwo.style.display = "none";
+	 }
+    
+    function handleOutsideClick() {
+        console.log('点击在范围外');
+        // 这里可以调用其他你希望的方法
+        // 例如关闭下拉菜单
+        document.getElementById('menuTwo').style.display = 'none';
+    }
+
+    document.addEventListener('click', function(event) {
+        var box = document.querySelector('.zc-box');
+        if (!box.contains(event.target)) {
+            handleOutsideClick();
+        }
+    });
+                //-->
+</SCRIPT>
+<!-- 顶部通栏 -->
+
+<style>
+            .you-xuanf{
+            position: fixed;
+    width:30%;
+    height: 70%;
+    background: #fff;
+    /* border-radius: 6px; */
+    bottom: 0%;
+    right: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ddd;
+            }
+    #navbar #nav ul li a {
+        padding: 0 19px !important;
+        font-size: 16px;
+    }
+
+    .Navigation ul li a {
+        color: #333;
+       transition:inherit;
+    }
+     .Navigation ul li a:hover{
+         color:#fff;
+         background-image: linear-gradient(to right, #00b094, #00ada8); 
+         transition:inherit;
+     }
+    
+     .Navigation ul li:hover .tab-list{
+        display: block;
+     }
+   .Navigation ul li:hover .tab-list a{
+      color:#fff;
+
+ }
+    .Navigation ul li.active {
+       
+        background-image: linear-gradient(to right, #00b094, #00ada8);
+        
+    }
+
+    .Navigation ul li.active a {
+        color: #fff;
+    }
+
+    .Navigation ul li .tab-list {
+        background-image: linear-gradient(to right, #00b094, #00ada8);
+        padding-top: 0;
+    }
+    .Navigation ul li .tab-list a{
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #fff;
+    }
+    .top-cont{
+    display: flex
+;
+    align-items: center;
+    }
+    .zc-box{
+    	position: relative;
+    }
+    .zc-box a{
+    display: inline-block !important;
+    width: 90px !important;
+    color: #0091e9;
+    background: #fff;
+    border-radius: 20px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    height: 28px;
+    line-height: 28px;
+}
+    .zc-box a:hover .nav-ul{
+    	display:block !important
+    }
+    .zc-box .nav-ul{
+        position: absolute;
+    top: 36px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+    width: 90px;
+    margin: auto;
+   border-radius: 6px;
+    box-shadow: 0px 0px 10px #eee;
+    border: 1px solid #eee;
+    padding: 5px 0px;
+    }
+     .zc-box .nav-ul .nav-li{
+     text-align: center;
+    padding: 8px 0px;
+     }
+     .ai-img{
+     background: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+     } 
+     .ai-img p{
+     display:flex;
+     width:112px;
+     
+    justify-content: center;
+     }
+     .ai-img img{
+     width:20px;
+     height:20px;
+     margin-right:4px
+     }
+     .xf-img{
+         position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index:99999
+
+     }
+     .xf-img img{
+     width:100%;
+     height:140px}
+     
+</style>
+<div class="navbar" id="navbar">
+<div class="xf-img">
+<!-- <a href="https://oshwhub.com/activities/spark2025" target="_blank">
+ <img src="images/pc-banner.png" /></a> -->
+</div>
+<div>
+<div class="top" style="background: url(images/tbbg.png)">
+    <div class="center" style="width: 1100px !important;" id="loginBox">
+        <a href="./home"><img src="images/logo.png" style="z-index:0" class="fl"></a>
+        
+            
+                <div class="fr logout top-cont">
+                <div class="ai-img">
+                <p onclick="toAI()"><img src="images/Ai.png" >AI智能小助手</p>
+                
+                </div>
+                    <span class=""><a href="user/login">登录</a></span>
+                    
+                    <div class="zc-box"  >
+                    	<a onclick="selectReg()">注册</a>
+                    	<div class="nav-ul" id="menuTwo" style="display: none;"  >
+                    		<div class="nav-li" onclick="toWx1()">学生注册</div>
+                    		<div class="nav-li" onclick="toWx2()">指导老师注册</div>
+                    		<div class="nav-li" onclick="toWx3()">联络人注册</div>
+                    	</div>
+                    </div>
+                    
+
+                    
+                </div>
+            
+            
+        
+    </div>
+</div>
+    <div class="Navigation center"  style="width: 1100px !important;    position: relative;" id="nav">
+        <ul style=" right: 0;display: inline-block;    position: absolute;">
+            <li class="active"><a href="./home">首页</a></li>
+            <li><a>大赛说明</a>
+                <div class="tab-list" id="secondList">
+                    
+                </div>
+            </li>
+            <li><a href="inform">通知公告</a></li>
+            <li><a href="question?num=20">常见问题</a> </li>
+            <li><a href="video">培训视频</a> </li>
+            <li><a href="school">参赛院校</a> </li>
+            <li><a href="video/review">往届回顾</a></li>
+            <li><a href="download">下载中心</a></li>
+            <li><a href="contact?id=1">联系我们</a> </li>
+            <li><a href="group/toCert">证书查询</a> </li>
+            
+            
+         <div class="you-xuanf" style="display:none" id="you-xuanf">
+	         <div onclick="closeInfo()">
+	         <div style="position: absolute;right: 20px;top: 20px;" ><img src="images/close2.png" style="width:30px;height:30px">
+	         </div></div>
+	 			<iframe src="https://ai.jiaozuoye.online/chat/integration?id=c97a374e81210278d494e4be763c9e5f&app_id=cm3f8dsv3044fqrn5m3n05d7y" width="100%"  height="100%">
+				  <p>您的浏览器不支持  iframe 标签。</p>
+				</iframe>
+ 		</div>
+
+            
+        </ul>
+    </div>
+    <div class="triangle"></div>
+</div>
+</div>
+
+
+
+<!-- <div class="notice_gb" id="boxStateOne" onClick="changeState(0)" style="display:none;">
+    <a><img src="images/index_tab.png" alt=""></a>
+    <div class="close-button">
+        <a>展开</a>
+    </div>
+</div>
+<div class="right-tab" id="boxStateTwo" onClick="changeState(1)">
+    <div style="position: relative;">
+        <a><img src="images/index_tab.png" alt=""></a>
+        <div class="close-button">
+            <a>收起</a>
+        </div>
+    </div>
+    <div class="list">
+        <ul>
+            
+        </ul>
+    </div>
+</div> -->
+<!-- <div class="share-code" style="z-index: 100">
+    <div class="share-box qq" id="QQ">
+        <div style="position: relative;z-index: 100;">
+            <img src="images/icon_qq.png" alt="">
+            <p>QQ群</p>
+        </div>
+        <div class="share-details">
+            <img src="images/qq_ewm.png">
+        </div>
+    </div>
+    <div class="share-box wx" id="WX">
+        <img src="images/icon_wx.png" alt="">
+        <p>微信公众号</p>
+        <div class="share-details">
+            <img src="images/wx_ewm.png">
+        </div>
+    </div>
+</div> -->
+<script src="js/base.js"></script>
+<script src="js/index.js"></script>
+<script>
+    var modalSchool = document.getElementById("modalSchool");
+    var ceshi = document.getElementById("ceshi");
+
+    var jq = layui.jquery;
+
+    function deleteEvent(e) {
+        e.stopPropagation();
+    }
+
+    function getSchool() {
+        modalSchool.style.display = "block";
+    }
+
+    function closeSchool() {
+        modalSchool.style.display = "none";
+        ceshi.style.display = "none";
+    }
+
+    function examinations() {
+        //     	var dates = new Date();
+        //     	console.log("dates:"+dates);
+        var date = new Date().getTime();
+        //                         	console.log("date:"+date);
+        window.location.href = "answerRecord/examination?type=1&date=" + date;
+    }
+
+    function examination() {
+        var date = new Date().getTime();
+        jq.post('group/judgeExamination', function (data) {
+            var flag = data.data.result;
+            console.log("flag:" + flag);
+            if (flag == 1 || flag == 2 || flag == 3) {
+                modalSchool.style.display = "none";
+                ceshi.style.display = "block";
+                $("#score").val(data.data.score + "分");
+                var result = "";
+                if (flag == 1) {
+                    result = "未提交";
+                } else if (flag == 2) {
+                    result = "通过";
+                } else {
+                    result = "不通过";
+                }
+                $("#result").val(result);
+            } else {
+                layer.confirm('考试只有一次机会，不通过将不能参加比赛，请谨慎对待！', {
+                    icon: 0,
+                    title: '提示'
+                }, function (index) {
+                    window.location.href = "answerRecord/examination?type=2&date=" + date;
+                    layer.close(index);
+                });
+            }
+        });
+    }
+
+    var boxStateOne = document.getElementById('boxStateOne');
+    var boxStateTwo = document.getElementById('boxStateTwo');
+
+    function changeState(index) {
+        if (index == 0) {
+            boxStateOne.style.display = "none";
+            boxStateTwo.style.display = "block";
+        } else {
+            boxStateOne.style.display = "block";
+            boxStateTwo.style.display = "none";
+        }
+    }
+    function toAI(){
+    	var xuan = document.getElementById('you-xuanf');
+    	xuan.style.display = "block";
+    }
+    
+    function closeInfo(){
+    	
+    	console.log('--------------')
+    	var xuan = document.getElementById('you-xuanf');
+    	xuan.style.display = "none";
+    }
+</script>
+
+		<div class="banner banner_ny">
+			<div class="center">
+				<p class="white">2026年全国大学生</p>
+                <h2 class="white">嵌入式芯片与系统设计竞赛</h2>
+			</div>
+		</div>
+	
+		<div class="list-content center explain notice-details">
+			<div class="left">
+                <div class="tab-nav center">
+                    <ul>
+                        <li><img src="images/shouy.png" alt=""></li>
+                        <li>首页</li>
+                        <li>></li>
+                        <li>通知公告</li>
+                    </ul>
+                </div>
+				<h3>【选题指南】2026应用赛道-移远赛题</h3>
+				<div class="time" >
+					<img src="images/icon_eye.png" alt=""><p style="vertical-align: middle;margin-right: 25px;  float: left;">45</p>
+					<img src="images/time.png" alt=""> <p style="vertical-align: middle;  float: left;">2026-02-12</p>
+				</div>
+<!-- 				<span class="time"> -->
+
+<!-- 				</span> -->
+				<p style="line-height: 16px;"><img style="vertical-align: middle; margin-right: 2px;" src="http://www.socchina.net/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif"/><a style="font-size:12px; color:#0066cc;" href="http://socoss.socchina.net/file/ueditor/image/20260212/538d07e3cd324c82bc4795aeac26db77.pdf" title="09嵌入式大赛&#39;2026选题指南-移远赛题.pdf">09嵌入式大赛&#39;2026选题指南-移远赛题.pdf</a></p><p><br/></p>
+				<div class="other">
+					<h3>
+						
+						
+                        上一篇：<a
+								href="details?id=2f2785641d6b484ea1ab859f05d9db85&intime=2026-02-12 15:03:43.0">
+								【选题指南】2026应用赛道-移远赛题 </a>
+						
+					</h3>
+					<h3>
+						
+                    	下一篇：无
+                    
+						
+					</h3>
+				</div>
+			</div>
+			
+			<!-- 
+
+  <div class="right">
+				<div class="right-top">
+					<h3>2026年全国大学生</h3>
+					<h3>嵌入式芯片与系统设计竞赛</h3>
+					<div class="signup"><a href="user/basicInfo?status=1&value=1" style="color: white;">立即报名</a></div>
+				</div>
+				<div class="right-bottom">
+					<h3>常见问题</h3>
+					
+
+					<div class="signup">
+						<a href="question" style="color: white">查看更多</a>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		
+
+    <!-- footer -->
+    <div class="footer" style="padding-top: 25px;">
+        <div class="center">
+            <div class="tab-nav">
+                <ul>
+                    <li class="active"><a href="./home">首页</a> <span></span></li>
+                    <li><a href="news?id=">大赛说明</a> <span></span></li>
+                    <li><a href="inform">通知公告</a> <span></span></li>
+                    <li><a href="question?num=20">常见问题</a> <span></span></li>
+                    <li><a href="video">培训视频</a> <span></span></li>
+                    <li><a href="school">参赛院校</a> <span></span></li>
+                    <li><a href="video/review">往届回顾</a> <span></span></li>
+                    <li><a href="download">下载中心</a> <span></span></li>
+                    <li><a href="contact?id=1">联系我们</a> <span></span></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li>周一至周五09:00-11:30 13:30-18:00</li>
+                    <!-- 	<li>(东南大学) 徐申：025-83795811-8305</li> -->
+
+                    <!-- <li>QQ咨询：马爽：425066281 陆嘉栋：276184617 李沛承：792201126</li> -->
+                    <li>QQ咨询：2026队长群 </li>
+                    <!-- <li>官方QQ群：575699069</li> -->
+                    <li>官方邮箱：soc@nicu.cn</li>
+                    <li>Copyright © 2018
+                        <!-- 南京集成电路产业服务中心 全国大学生嵌入式芯片与系统设计竞赛组委会  全国大学生嵌入式芯片与系统设计竞赛暨全国大学生智能互联创新大赛组织组委会-->南京集成电路产业服务中心有限公司版权所有
+                        All Rights Reserved <a href="https://beian.miit.gov.cn/" target="_blank"
+                            style="color: white;">苏ICP备17012569号-2</a>
+                        <span style="display: inline-block; margin-left: 10px;">
+                            <script type="text/javascript">
+                                var cnzz_protocol = (("https:" == document.location.protocol) ? " https://"
+                                    : "http://");
+                                document.write(unescape("%3Cspan id='cnzz_stat_icon_1273796019'%3E%3C/span%3E%3Cscript src='"
+                                    + cnzz_protocol
+                                    + "s22.cnzz.com/z_stat.php%3Fid%3D1273796019%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+                            </script>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="code">
+                <ul>
+                    
+                    
+                    <li><img src="images/wx_ewm.png">
+                        <p>关注微信公众号</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-button" style="display: none;">
+        <ul>
+            <li>
+                <a class="a1" href="user/login">
+                    <img src="images/btn-icon1.png" />
+                    <em>登录</em>
+                </a>
+            </li>
+            <li>
+                <a href="questionnaireBank/queryList" class="a1">
+                    <img src="images/btn-icon2.png" />
+                    <em>注册</em>
+                </a>
+            </li>
+            <li>
+                
+                
+                <div class="pop">
+                    <dl>
+                        <img src="images/qq_ewm.png" />
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <a class="a1">
+                    <img src="images/btn-icon4.png" />
+                    <em>微信号</em>
+                </a>
+                <div class="pop">
+                    <dl>
+                        <img src="images/wx_ewm.png" />
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <a class="a1" href="user/getWxLoginTwo?value=2">
+                    <img src="images/llr.png" />
+                    <em>联络人申请</em>
+                </a>
+
+
+
+
+
+            </li>
+
+            <li class="returnTop">
+                <a class="a1">
+                    <img src="images/btn-icon5.png" />
+                    <em>返回顶部</em>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <style>
+        .close_gb {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 0px;
+            right: 0px
+        }
+
+        .dlym {
+            position: relative;
+        }
+    </style>
+    <div id="myModal" class="reveal-modal">
+        <span class="close-reveal-modal"> </span>
+        <div class="dl_box">
+            <img src="images/denglu.png" class="fl" />
+            <div class="dlym">
+                <img src="images/qx.png" class="close_gb close-reveal-modal" />
+                <h2>欢迎登录</h2>
+                <div class="shuruk">
+                    <p>账号</p>
+                    <input placeholder="请输入账号" name="username" id="username" />
+                    <span class="title">
+                        <span id="hide" style="display: none">该手机号没有注册，你可以
+                            <a href="user/register" class="main-link-color">先注册</a>
+                        </span>
+                    </span>
+                </div>
+                <div class="shuruk">
+                    <p>密码</p>
+                    <input type="password" placeholder="请输入密码" name="password" id="password" />
+                </div>
+
+                <a href="user/wjmm">
+                    <p class="wjmm maina-color">忘记密码?</p>
+                </a>
+
+                <a href="javascript:fn.login();">
+                    <p class="ljdl">立即登录</p>
+                </a>
+                <li style="display: none">
+                    <a id="li_a_login" href="user/basicInfo?value=1">登录2</a>
+                    <input type="hidden" value="1" class="loginType" />
+                </li>
+                <p class="myzh">没有账号，<a href="user/register">立即注册</a></p>
+                <div class="kjdl">
+                    <p>快捷登录</p>
+                    <a onclick="fn.toQQLogin()"><img src="images/qq1.png" /></a>
+                    <a onclick="fn.toWx()"><img src="images/weixin.png" /></a>
+                    <!-- <a href="#"><img src="images/weibo.png" /></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+    <script>
+        var fn = {};
+        layui.use(['form','layer','upload'],function () {
+            var form = layui.form,
+                layer = layui.layer;
+            var jq = layui.jquery;
+
+            /* fn.refreshCaptcha = function () {
+                //重置验证码
+                $('#captcha').click();
+            }; */
+
+            /* //忘记密码修改
+            fn.passback = function () {
+                var username = $('#username').val();
+                var smscode = $('#smscode').val();
+                if (!smscode.trim()) {
+                    layer.msg('请填写验证码！');
+                    document.getElementById('smscode').style.borderColor = '#ff0000';
+                    return;
+                } else {
+                    document.getElementById('smscode').style.borderColor = '';
+                }
+                var password = $('#password').val();
+                var pwdReg = /^[a-zA-Z0-9]{6,18}$/;
+                if (!pwdReg.test(password)) {
+                    layer.msg('请填写正确格式的密码！');
+                    //                     $("#password").attr("style","color:red");
+                    document.getElementById('password').style.borderColor = '#ff0000';
+                    return false;
+                } else {
+                    //                  $("#password").removeAttr('style');
+                    document.getElementById('password').style.borderColor = '';
+                }
+                var rePassword = $('#rePassword').val();
+                if (password != rePassword) {
+                    layer.msg('密码不一致！');
+                    document.getElementById('password').style.borderColor = '#ff0000';
+                    document.getElementById('rePassword').style.borderColor = '#ff0000';
+                    return false;
+                } else {
+                    document.getElementById('password').style.borderColor = '';
+                    document.getElementById('rePassword').style.borderColor = '';
+                } */
+
+            /* var jsons = { username: username, smscode: smscode, password: password, rePassword: rePassword };
+            jq.post('user/passback', jsons, function (data) {
+                if (data.data == 1) {
+                    layer.msg(data.message);
+                    $('#captcha').click(); //重置验证码
+                } else {
+                    if (data.code == 200) {
+                        window.location.href = 'user/basicInfo?value=1';
+                    } else {
+                        layer.msg(data.message);
+                    }
+                }
+            });
+        }; */
+            //登录
+            fn.login = function () {
+                var loginType = $('.loginType').val();
+                if (loginType == '2') {
+                    fn.smsLogin();
+                    return;
+                }
+                var username = $('#username').val().trim();
+                var password = $('#password').val().trim();
+                if (!username) {
+                    layer.msg('请输入手机号！');
+                    return;
+                }
+                if (!password) {
+                    layer.msg('请输入密码');
+                    return;
+                }
+                //              var captchas = $("#captchas").val();
+                var jsons = {
+                    username: username,
+                    password: password,
+                };
+                jq.post('user/loginSubmit',jsons,function (data) {
+                    if (data.data == 1) {
+                        layer.msg(data.message);
+                        //				 						$("#captcha").click();//重置验证码
+                        $("#hide").attr("style","");
+                    } else {
+                        if (data.code == 200) {
+                            document.getElementById("li_a_login").click();
+                            var user = $("#username").val();
+                            setCookie("username",user,30);
+                        } else {
+                            layer.msg(data.message);
+                            $("#hide").attr("style","display:none");
+                        }
+                    }
+                });
+            };
+            /* fn.smsLogin = function () {
+                var username = $('#loginUsername').val().trim();
+                if (!username) {
+                    layer.msg('请输入手机号！');
+                    return;
+                }
+                var smscode = $('#smscode').val();
+                if (!smscode.trim()) {
+                    layer.msg('请填写验证码！');
+                    document.getElementById('smscode').style.borderColor = '#ff0000';
+                    return;
+                } else {
+                    document.getElementById('smscode').style.borderColor = '';
+                }
+                var jsons = {
+                    username: username,
+                    smscode: smscode,
+                };
+                jq.post('user/smsLogin', jsons, function (data) {
+                    if (data.code == 200) {
+                        setCookie('username', username, 30);
+                        window.location.href = 'user/basicInfo?value=1';
+                    } else {
+                        layer.msg(data.message);
+                    }
+                });
+            }; */
+
+            /* fn.getSmscode = function () {
+                var username = $('#loginUsername').val();
+                $('#smsBtn').removeAttr('href'); //取消发送事件
+                var jsons = {
+                    username: username,
+                };
+                jq.post('user/sendSmsLogin', jsons, function (data) {
+                    if (data.code == 200) {
+                        layer.msg(data.message);
+                        document.getElementById('loginUsername').style.borderColor = '';
+                        fn.daojishi();
+                    } else {
+                        layer.msg(data.message);
+                        document.getElementById('loginUsername').style.borderColor = '';
+                        $('#smsBtn').attr('href', 'javascript:fn.getSmscode()'); //恢复发送事件
+                    }
+                });
+            };
+            //倒计时60重新发送
+            fn.daojishi = function () {
+                var step = 60;
+                $('#send').val('重新发送60');
+                var _res = setInterval(function () {
+                    $('#send').val('重新发送' + step);
+                    $('#smsBtn').removeAttr('href'); //取消发送事件
+                    step -= 1;
+                    if (step <= 0) {
+                        $('#send').val('重新发送');
+                        $('#smsBtn').attr('href', 'javascript:fn.getSmscode()'); //恢复发送事件
+                        clearInterval(_res); //清除setInterval
+                    }
+                }, 1000);
+            };
+            fn.changeLogin = function (type) {
+                if (type == '1') {
+                    $('.smsLoginEv').show();
+                    $('.pwdLoginEv').hide();
+                    $('.pwdBox').show();
+                    $('.smsBox').hide();
+                } else {
+                    $('.smsLoginEv').hide();
+                    $('.pwdLoginEv').show();
+                    $('.pwdBox').hide();
+                    $('.smsBox').show();
+                }
+                $('.loginType').val(type);
+            }; */
+            fn.toQQLogin = function () {
+                window.location.href =
+                    'https://graph.qq.com/oauth2.0/authorize?client_id=101794282&redirect_uri=http://www.fpgachina.cn/user/notifyQq&response_type=code&state=state';
+            };
+            fn.toWx = function () {
+                window.location.href = 'user/getWxLogin';
+            };
+        });
+    </script>
+    <script>
+        //回车键登录
+        $(document).keyup(function (event) {
+            if (event.keyCode == 13) {
+                var revealDis = $('#myModal').css('visibility');
+                if (revealDis == 'visible') {
+                    $('#loginSubmit').click();
+                }
+            }
+        });
+
+        function setCookie (cname,cvalue,exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+            var expires = 'expires=' + d.toGMTString();
+            document.cookie = cname + '=' + cvalue + '; ' + expires;
+        }
+        function getCookie (cname) {
+            var name = cname + '=';
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length,c.length);
+                }
+            }
+            return '';
+        }
+
+        function checkCookie () {
+            var user = getCookie('username');
+            if (user != '') {
+                $('#loginUsername').val(user);
+            } else {
+                user = $('#loginUsername').val();
+                if (user != '' && user != null) {
+                    setCookie('username',user,30);
+                }
+            }
+        }
+        checkCookie();
+    </script>
+    <script>
+        var obj = new WxLogin({
+            self_redirect: true,
+            id: 'login_container',
+            appid: '',
+            scope: '',
+            redirect_uri: '',
+            state: '',
+            style: '',
+            href: '',
+        });
+    </script>
+	</div>
+	<script src="js/base.js"></script>
+	<script>
+		tabListSwitch(2);
+    </script>
+    <style>
+        .notice-details .left .other{
+            padding: 20px;
+    border-radius: 10px;
+        }
+        .notice-details .left .other h3{
+            margin-top: 0;
+    font-size: 16px;
+    line-height: 40px;
+        }
+        .notice-details .left h3{
+            margin-top: 30px;
+        }
+        .notice-details .left p{
+            color: #999;
+            margin-left: 5px;
+        }
+        .notice-details .left .time{
+            overflow: hidden;
+        }
+        .notice-details .left .time img{
+            width: 22px;
+    vertical-align: middle;
+    float: left;
+        }
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+| Vendor/Model | CPU | NPU | Memory | Video | I/O | Power/Pkg |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |

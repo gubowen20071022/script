@@ -1,0 +1,15 @@
+
+### Loongson (龙芯中科)
+*   **Target Application**: Industrial Control, IoT, Gateway.
+*   **Detailed Specs**:
+    *   **LS2K3000**:
+        *   **Processing**: 8-Core LA364E (High performance). 10+ Score/GHz.
+        *   **AI**: Integrated GPGPU LG200 for AI acceleration.
+        *   **Application**: Industrial Control, Edge Computing.
+    *   **LS2K0300/0301**:
+        *   **Processing**: Single/Dual LA264 loongArch core.
+        *   **Connectivity**: Integrated Wi-Fi (0301).
+        *   **Power**: Low power (<3W).
+*   **Unique Features**: Fully autonomous LoongArch instruction set. High independence.
+
+---

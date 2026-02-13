@@ -1,0 +1,180 @@
+### Espressif - ESP32-P4 / S3
+*   **Target Application**: AIoT, Edge AI, HMI, Smart Home
+*   **Detailed Specs**:
+    *   **Processing**:
+        *   **ESP32-P4**: High-performance Dual-core RISC-V (400MHz) with AI instruction extensions & FPU.
+        *   **ESP32-S3**: Dual-core Xtensa LX7 (240MHz) with vector instructions for AI.
+    *   **Memory**:
+        *   **P4**: 768KB HP SRAM, 8KB TCM, support for external PSRAM/Flash.
+        *   **S3**: 512KB internal SRAM, Octal SPI interface for Flash/PSRAM.
+    *   **Video/Display**:
+        *   **P4**: H.264 encoding support, MIPI-CSI (Camera) / MIPI-DSI (Display), LCD interface.
+        *   **S3**: LCD interface (RGB/8080/6800), Camera interface.
+    *   **Connectivity**:
+        *   **P4**: Requires external module for Wi-Fi/BT (e.g., C6). Integrated USB 2.0 High Speed, Ethernet MAC (typically).
+        *   **S3**: Integrated 2.4GHz Wi-Fi (802.11 b/g/n) and Bluetooth 5 (LE).
+    *   **Electrical**:
+        *   P4/S3: TSMC Low Power process (typically 40nm or 22nm depending on gen).
+*   **Unique Features**:
+    *   **P4**: Strong security, rich HMI (Touch, LCD), AI instructions.
+    *   **S3**: Classic AIoT choice, integrated Wi-Fi/BT, widely supported in Arduino/ESP-IDF.
+*   **Notes**: Competition allows P4 or S3. P4 is recommended for high-performance HMI/AI; S3 for connected low-power IoT.
+
+---
+
+### Horizon Robotics (DiGua) - RDK Series
+*   **Target Application**: Robotics, Embodied Intelligence, Autonomous Systems.
+*   **Detailed Specs**:
+    *   **RDK S100**:
+        *   **Processor**: S100 Smart Computing Chip.
+        *   **AI**: 80 - 128 TOPS BPU.
+        *   **Application**: Complex robots, large models, multi-modal interactions.
+    *   **RDK X5**:
+        *   **Processor**: Sunrise 5 (旭日 5).
+        *   **AI**: 10 TOPS.
+        *   **Features**: Best cost-performance for robotics, supports depth/VSLAM.
+    *   **RDK X3**:
+        *   **Processor**: Sunrise 3 (旭日 3).
+        *   **AI**: 5 TOPS.
+        *   **Video**: 4K@60fps H.264/H.265.
+*   **Unique Features**: Strong BPU (Brain Processing Unit), TROS (Robot OS) support, NodeHub algorithm center.
+*   **Notes**: Focused on Robot Development Kits (RDK).
+
+---
+
+### Fibocom (广和通) - SC171 / L610
+*   **Target Application**: AIoT, Smart Retail, Industrial Handhelds, Robots.
+*   **Detailed Specs**:
+    *   **SC171 (Smart Module)**:
+        *   **Processing**: 8-Core ARM v8 Cortex @ 2.7GHz (High-end Qualcomm-based likely).
+        *   **AI**: 13 TOPS (CPU+GPU+DSP+NPU).
+        *   **Connectivity**: 5G, Wi-Fi, BT, GNSS.
+        *   **I/O**: MIPI DSI/CSI, HDMI, USB, UART, CAN.
+        *   **OS**: Android, Linux (Ubuntu), OpenHarmony.
+    *   **L610 (CAT1 Module)**:
+        *   **Connectivity**: LTE Cat 1 (10Mbps DL / 5Mbps UL).
+        *   **Application**: Low-speed IoT, "Internet of Everything".
+*   **Unique Features**: SC171 is a powerhouse "Smart Module" with integrated 5G/AI.
+*   **Notes**: SC171 is recommended for high-end AIoT; L610 for basic connectivity.
+
+---
+
+### STMicroelectronics (意法半导体) - STM32 / Stellar
+*   **Target Application**: General Purpose, Automotive, Industrial, AI.
+*   **Detailed Specs**:
+    *   **STM32N6**:
+        *   **Processing**: Cortex-M family with dedicated NPU.
+        *   **Feature**: First STM32 with integrated Neural Art Accelerator for Edge AI.
+    *   **Stellar E1/P3**:
+        *   **Processing**: ARM Cortex-R52 (Automotive Grade).
+        *   **Application**: Gateway, Domain Controller, EV Control.
+    *   **STM32H7**: High-performance dual-core MCU.
+    *   **STM32U5**: Ultra-low power with LPBAM.
+*   **Unique Features**: Massive ecosystem (CubeMX, Cube.AI), Automotive safety (ASIL), Broad portfolio.
+
+---
+
+### WCH (沁恒微电子) - CH32 Series
+*   **Target Application**: Connectivity, USB, Industrial Control.
+*   **Detailed Specs**:
+    *   **CH32H417/5**:
+        *   **Processing**: Dual-core RISC-V (QingKe).
+        *   **Connectivity**: Ultra-high speed USB 3.0, Gigabit Ethernet.
+        *   **Application**: High-speed data bridging, industrial gateways.
+    *   **CH585**:
+        *   **Processing**: RISC-V.
+        *   **Connectivity**: Bluetooth 5, NFC, USB.
+*   **Unique Features**: Self-developed IP (USB/Eth/BT/RISC-V), focused on "Connectivity & Control".
+*   **Notes**: Strong in USB 3.0 and interface bridging.
+
+---
+
+### HiSilicon (海思)
+*   **Target Application**: Smart Home, surveillance, Industrial.
+*   **Detailed Specs**:
+    *   **SS928**:
+        *   **Processing**: Quad Cortex-A55 @ 1.4GHz.
+        *   **AI**: Neural Network Engine, 10 TOPS INT8.
+        *   **Video**: 8K encoding/decoding, 4-channel sensor input.
+    *   **WS63**:
+        *   **Processing**: High-performance 32-bit RISC-V.
+        *   **Connectivity**: Wi-Fi 6, NearLink (SLE), BLE 5.0.
+        *   **Application**: Smart Home, Wearables.
+*   **Unique Features**: NearLink (StarFlash) technology for low latency wireless.
+
+### Rockchip (瑞芯微)
+*   **Target Application**: Edge AI, Tablets, Commercial Display.
+*   **Detailed Specs**:
+    *   **RK3588**:
+        *   **Processing**: Octa-core (4xA76 + 4xA55). 8nm process.
+        *   **AI**: 6 TOPS NPU, Mixed precision.
+        *   **Multimedia**: 8K Video, multiple MIPI CSI/DSI.
+    *   **RV1126B**:
+        *   **Processing**: Quad Cortex-A53 @ 1.6GHz.
+        *   **AI**: 3 TOPS.
+*   **Unique Features**: High-performance NPU and Media capabilities.
+
+### Renesas (瑞萨电子)
+*   **Target Application**: Industrial, Automotive, Motor Control.
+*   **Detailed Specs**:
+    *   **RZ/V2H**:
+        *   **Processing**: Heterogeneous (A55 + R8 + M33).
+        *   **AI**: DRP-AI3 accelerator (High efficiency, low power).
+    *   **RA8 Series (RA8D1)**:
+        *   **Processing**: Cortex-M85 Global First. 480MHz.
+        *   **AI**: Helium vector extensions for DSP/AI.
+*   **Unique Features**: DRP-AI (Dynamically Reconfigurable Processor), Helium technology.
+
+### RT-Thread / Canaan (睿赛德)
+*   **Target Application**: Real-time OS, RISC-V AI.
+*   **Detailed Specs**:
+    *   **K230 (RT-Smart AI Kit)**:
+        *   **Processing**: Dual-core RISC-V (XuanTie C908 likely).
+        *   **AI**: KPU (Knowledge Process Unit).
+*   **Notes**: RT-Thread platform supports Hybrid deployment (Linux + RT-Thread) on RK3588.
+
+---
+
+### Quectel (移远通信)
+*   **Target Application**: Smart Retail, Industrial Gateway, Visual Navigation.
+*   **Detailed Specs**:
+    *   **QSM368ZP-WF**:
+        *   **Processing**: Rockchip RK3568 (Quad A55).
+        *   **AI**: 1 TOPS NPU.
+        *   **Application**: Smart POS, NVR, Industrial tablet.
+    *   **UniKnect Kit GEN-1 Pro**:
+        *   **Processing**: STM32 + 4G Module.
+        *   **Application**: Low power IoT.
+*   **Unique Features**: Strong integration of Cellular/Communication with Computing.
+
+### Infineon (英飞凌)
+*   **Target Application**: Edge AI, Industrial, IoT, Automotive.
+*   **Detailed Specs**:
+    *   **PSoC Edge E84**:
+        *   **Processing**: Cortex-M55 (400MHz) + M33 (200MHz).
+        *   **AI**: Ethos-U55 NPU + Helium DSP. 0.1 TOPS.
+        *   **Application**: Voice UI, Wearables, Smart Home.
+    *   **PSoC 6**:
+        *   **Processing**: Dual Core M4 + M0+.
+        *   **Application**: Low power IoT.
+    *   **XMC7000**:
+        *   **Processing**: Industrial Cortex-M7.
+        *   **Application**: Motor control, Power conversion.
+*   **Unique Features**: PSoC Edge is a cutting-edge Microcontroller with NPU. Extensive connectivity (AIROC).
+
+---
+
+### Loongson (龙芯中科)
+*   **Target Application**: Industrial Control, IoT, Gateway.
+*   **Detailed Specs**:
+    *   **LS2K3000**:
+        *   **Processing**: 8-Core LA364E (High performance). 10+ Score/GHz.
+        *   **AI**: Integrated GPGPU LG200 for AI acceleration.
+        *   **Application**: Industrial Control, Edge Computing.
+    *   **LS2K0300/0301**:
+        *   **Processing**: Single/Dual LA264 loongArch core.
+        *   **Connectivity**: Integrated Wi-Fi (0301).
+        *   **Power**: Low power (<3W).
+*   **Unique Features**: Fully autonomous LoongArch instruction set. High independence.
+
+---
